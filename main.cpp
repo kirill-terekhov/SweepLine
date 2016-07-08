@@ -41,7 +41,7 @@ struct Segment
 class event_less
 {
 public:
-	bool operator()(const std::pair<double, int> & a, const std::pair<double, int> & b)
+	bool operator()(const std::pair<double, int> & a, const std::pair<double, int> & b) const
 	{
 		if (a.first < b.first - 1.0e-9)
 			return true;
